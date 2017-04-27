@@ -1,0 +1,48 @@
+name: SWC-conda
+version: 0.0.5
+
+channels:
+  - http://repo.continuum.io/pkgs/free/
+  - http://repo.continuum.io/pkgs/msys2         [win]
+  - https://conda.anaconda.org/swc              [win]
+#  - https://conda.anaconda.org/msys2           [win]
+
+specs:
+  - python 3.6*
+  - conda
+  - jupyter
+  - matplotlib
+  - nomkl                                       [not win]
+  - nose
+  - notebook
+  - numpy
+  - pandas
+  - pip
+  - scipy
+  - sqlite
+  - console_shortcut                            [win]
+  - menuinst                                    [win]
+  - posix                                       [win]
+  - m2w64-toolchain                             [win]
+  - git                                         [win]
+  - nano                                        [win]
+  # - swc-shell                                   [win]
+  # - swc-python
+  # - swc-git                                     [win]
+
+exclude:
+  - qt
+  - pyqt
+  - sip
+
+# license_file: EULA.txt
+
+# Images for Windows installer:
+# The welcome_image is re-sized to 164 x 314 pixels:
+welcome_image: images/swc-logo-blue-welcome.png      [win]
+# The header_image is re-sized to 150 x 57 pixels:
+header_image:  images/swc-logo-blue-header.png       [win]
+# The icon_image is re-sized to 256 x 256 pixels:
+icon_image:    images/software-carpentry-logo.ico    [win]
+
+post_install: post-win.bat [win]
