@@ -1,5 +1,5 @@
 name: SWC-conda
-version: 0.0.5_CMSC6950
+version: 0.0.6_CMSC6950
 
 channels:
   - http://repo.continuum.io/pkgs/free/
@@ -30,8 +30,10 @@ specs:
   - bokeh                                       #CMSC6950
   - h5py                                        #CMSC6950
   - hdf5                                        #CMSC6950
+  - pytables                                    #CMSC6950
   - requests                                    #CMSC6950
   - sphinx                                      #CMSC6950
+  - spyder                                      #CMSC6950
   # - swc-shell                                   [win]
   # - swc-python
   # - swc-git                                     [win]
