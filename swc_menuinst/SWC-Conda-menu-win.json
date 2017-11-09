@@ -1,0 +1,22 @@
+{
+    "menu_name": "SWC-Conda",
+    "menu_items":
+        [
+          {
+              "script": "${PREFIX}/python.exe",
+              "scriptarguments": ["--version"],
+              "name": "SWC python test",
+              "workdir": "${USERPROFILE}",
+              "icon": "${MENU_DIR}/swc-logo.ico",
+          },
+            {
+                "script": "${PREFIX}/Library/usr/bin/mintty.exe",
+                "scriptarguments": ["--exec", "${PREFIX}/Library/usr/bin/bash.exe", "--login"],
+                "name": "SWC Bash MinTTY",
+                "workdir": "${USERPROFILE}",
+                "icon": "${MENU_DIR}/swc-logo.ico",
+                "desktop": false,
+                "quicklaunch": false
+            }
+        ]
+}

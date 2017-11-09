@@ -1,0 +1,16 @@
+package:
+  name: swc_menuinst
+  version: 0.7.0
+
+build:
+  number: 2
+  string: '2'
+
+requirements:
+  run:
+    - posix [win]
+
+about:
+  home:
+  license: public domain.  Individual packages have their own license.
+  summary: metapackage to install Python prereqs using conda for Software Carpentry workshops
